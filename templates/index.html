@@ -2,22 +2,16 @@
 
 {% block content %}
 
-<section class="container">
+<h2>Sobre mí</h2>
+<p>Hola 👋 soy desarrollador web aprendiendo Flask.</p>
 
-    <h2 class="title">🚀 Mis Proyectos</h2>
+<h2>Mis proyectos</h2>
 
-    <div class="grid">
-
-        {% for post in posts %}
-        <div class="card">
-            <h3>{{ post.titulo }}</h3>
-            <p>{{ post.descripcion }}</p>
-            <a href="/post/{{ post.id }}">Ver proyecto →</a>
-        </div>
-        {% endfor %}
-
-    </div>
-
-</section>
+{% for post in posts %}
+<div class="card">
+    <h3>{{ post.titulo }}</h3>
+    <p>{{ post.descripcion }}</p>
+</div>
+{% endfor %}
 
 {% endblock %}

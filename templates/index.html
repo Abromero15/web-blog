@@ -1,17 +1,43 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mantenimiento</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
 
-{% block content %}
+<body>
 
-<h2>Sobre mí</h2>
-<p>Hola 👋 soy desarrollador web aprendiendo Flask.</p>
+<div class="container">
 
-<h2>Mis proyectos</h2>
+    <h1>🚧 Página en mantenimiento</h1>
 
-{% for post in posts %}
-<div class="card">
-    <h3>{{ post.titulo }}</h3>
-    <p>{{ post.descripcion }}</p>
+    <p>Estamos mejorando el sitio para ofrecerte una mejor experiencia.</p>
+
+    <p class="sub">Vuelve pronto 🚀</p>
+
+    <hr>
+
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos una empresa en desarrollo enfocada en soluciones digitales modernas.</p>
+
+    <h2>Misión</h2>
+    <p>Brindar soluciones web eficientes y accesibles para todos.</p>
+
+    <h2>Visión</h2>
+    <p>Ser una empresa líder en desarrollo web y tecnología digital.</p>
+
+    <hr>
+
+    <a class="whatsapp"
+       href="https://wa.me/5959812488000"
+       target="_blank">
+       💬 Contáctanos por WhatsApp
+    </a>
+
 </div>
-{% endfor %}
+
+</body>
+</html>
 
 {% endblock %}

@@ -3,27 +3,39 @@
     font-family: Arial;
     background: #0f172a;
     color: white;
-}
-
-header {
     text-align: center;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
     padding: 40px;
-    background: #1e293b;
 }
 
-main {
-    padding: 20px;
+h1 {
+    color: #38bdf8;
 }
 
-.card {
-    background: #1e293b;
-    padding: 15px;
-    margin: 10px auto;
-    width: 80%;
-    border-radius: 10px;
-    transition: 0.3s;
+.sub {
+    color: #94a3b8;
 }
 
-.card:hover {
-    transform: scale(1.02);
+hr {
+    margin: 30px 0;
+    border: 1px solid #334155;
+}
+
+.whatsapp {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.whatsapp:hover {
+    background: #16a34a;
 }

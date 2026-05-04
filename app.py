@@ -2,21 +2,9 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# Datos de ejemplo (tus trabajos)
-posts = [
-    {
-        "titulo": "Proyecto 1",
-        "descripcion": "Este es mi primer trabajo."
-    },
-    {
-        "titulo": "Proyecto 2",
-        "descripcion": "Este es otro proyecto realizado."
-    }
-]
-
 @app.route("/")
 def home():
-    return render_template("index.html", posts=posts)
+    return render_template("maintenance.html")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)

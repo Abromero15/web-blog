@@ -1,4 +1,40 @@
-﻿body {
-    background: #0f172a;
+﻿.maintenance-body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #1e293b, #0f172a);
     color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.maintenance-box {
+    background: rgba(30, 41, 59, 0.9);
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    max-width: 500px;
+}
+
+.icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+.sub {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #38bdf8;
 }

@@ -1,14 +1,23 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Mis trabajos</h2>
 
-{% for post in posts %}
-<div>
-    <h3>{{ post.titulo }}</h3>
-    <p>{{ post.descripcion }}</p>
-    <a href="/post/{{ post.id }}">Ver más</a>
-</div>
-{% endfor %}
+<section class="container">
+
+    <h2 class="title">🚀 Mis Proyectos</h2>
+
+    <div class="grid">
+
+        {% for post in posts %}
+        <div class="card">
+            <h3>{{ post.titulo }}</h3>
+            <p>{{ post.descripcion }}</p>
+            <a href="/post/{{ post.id }}">Ver proyecto →</a>
+        </div>
+        {% endfor %}
+
+    </div>
+
+</section>
 
 {% endblock %}

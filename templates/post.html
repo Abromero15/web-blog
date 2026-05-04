@@ -1,7 +1,25 @@
-git --version{% extends "base.html" %}
+{% extends "base.html" %}
 
 {% block content %}
-<h2>{{ post.titulo }}</h2>
-<p>{{ post.descripcion }}</p>
-<a href="/">Volver</a>
+
+<div class="container">
+
+    <div class="post-card">
+
+        <h2>{{ post.titulo }}</h2>
+
+        <p>{{ post.descripcion }}</p>
+
+        <hr>
+
+        <p>
+            Este es un proyecto desarrollado como parte de mi portafolio web.
+        </p>
+
+        <a class="back" href="/">← Volver al inicio</a>
+
+    </div>
+
+</div>
+
 {% endblock %}
